@@ -1,6 +1,6 @@
 """
 * In this think-aloud usability test, we will ask you to finish
-  a series of tasks, each marked with TODO. Please finish all of them!
+  a series of tasks, each marked with TODO:. Please finish all of them!
 
 * Type checking in Visual Studio Code has been turned on.
   In addition, You can use `mypy tests.py` in the terminal
@@ -24,16 +24,16 @@ from math import sqrt
 # Task 1: Simple Types
 # Annotate the following variables with correct types
 
-# TODO 1.1 an integer variable
+# TODO: 1.1 an integer variable
 a = 12
 
-# TODO 1.2 a string variable
+# TODO: 1.2 a string variable
 b = "hello world"
 
-# TODO 1.3 an array of
+# TODO: 1.3 an array of float
 c = [0, 1.44, -3.14159]
 
-# TODO 1.4
+# TODO: 1.4
 # "one_tuple" is a variable of a tuple with only a single integer
 one_tuple = (1,)
 # "int_str_pair" is a variable of a pair (tuple) of one integer and one string
@@ -41,7 +41,7 @@ int_str_pair = (12, "hello world")
 # "infinite_tuple" is a variable of a tuple, which holds an indefinite number of integer values
 infinite_tuple = (1, 2, 3, 4, 5, 6, 7)
 
-# TODO 1.5 "num_or_none" can be either a number or None,
+# TODO: 1.5 "num_or_none" can be either a number or None,
 # so assigning it both types of value is valid
 num_or_none = 12
 
@@ -53,12 +53,12 @@ num_or_none = None
 # including both argument types and return types
 
 
-# TODO 2.1 "abs_sqrt" takes an integer and returns a floating point number
+# TODO: 2.1 "abs_sqrt" takes an integer and returns a floating point number
 def abs_sqrt_(value):
     return sqrt(abs(value))
 
 
-# TODO 2.2 for the same function
+# TODO: 2.2 for the same function
 # if the value is smaller than 0, return None
 def abs_sqrt(value):
     if value >= 0:
@@ -67,12 +67,12 @@ def abs_sqrt(value):
         return None
 
 
-# TODO 2.3 "map_num" is similar to the built-in "map" function
+# TODO: 2.3 "map_num" is similar to the built-in "map" function
 # it takes a function and an array of integers
 # applies each of the value in the array to the function
 # and returns an array of either floating point numbers or None
 def map_num(func, nums):
-    # TODO also add type hint for variable "result"
+    # TODO: also add type hint for variable "result"
     result = []
     for i in nums:
         result.append(func(i))
@@ -86,7 +86,7 @@ map_result = map_num(abs_sqrt, [1, 2, 3, 4, 5, 6])
 # Task 3: create a custom type called "Record"
 # Add type signature to each method.
 class Record:
-    # TODO 2.4
+    # TODO: 2.4
     # "name" is a string, "age" is an integer,
     # "gender" can only be a value of "Male" or "Female",
     # "salaries" is an array of floating point numbers
@@ -102,7 +102,7 @@ class Record:
         self.gender = gender
         self.salaries = salaries
 
-    # TODO 2.5 use Record type, write a function
+    # TODO: 2.5 use Record type, write a function
     # argument "new_salaries" can be a single value (such as from user input)
     # or it can be a list of values or None (such as from database query where some months' data are missing)
     # return a list consisting of all the valid salaries (NOT None) from both the record itself and "new_salaries"
