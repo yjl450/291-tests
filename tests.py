@@ -114,6 +114,7 @@ class Record:
 entry: Record = Record("Helen", 12, "Female", [1000.0, 2500.5])
 
 # and we will get the following output
+print(entry.output_all_salary(3.14159))  # return [1000.0, 2500.5, 3.14159]
 print(entry.output_all_salary([1, 2, None, 3]))  # return [1000.0, 2500.5, 1, 2, 3]
 print(entry.output_all_salary([3.14159]))  # return [1000.0, 2500.5, 3.14159]
 
